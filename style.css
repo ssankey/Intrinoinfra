@@ -1,0 +1,899 @@
+/*-----------------------------
+	Theme Name: Max Electric
+	Start Date : 
+	End Date : 
+	Last change: 
+	Version: 1.0
+	Assigned to:
+	Primary use:
+-----------------------------*/
+
+	/* [Layout] */
+
+/*----------------------------
+
+	## Global
+	
+		- Padding/Margin
+		- Section Padding
+		- Fonts Settings	
+		
+	## Site Header	
+	
+		- Navigation Menu
+			-- Nav Main
+			-- Nav Header
+			-- Nav Toggle
+			-- Nav Switch
+			-- Nav Items
+			-- Nav Dropdown
+
+	## Responsive
+	- Min Width : 992px & Max Width 1200px
+	
+	- Min Width : 992px
+	
+		## Navigation Menu
+		- Nav Main
+		- Nav Header
+		- Nav Toggle
+		- Nav Switch
+		- Nav Items
+		- Nav Dropdown
+	
+	* Responsive		
+		- min-width: 1200
+		- min-width: 992
+		- min-width: 768
+		- max-width: 1200
+		- min-width: 992 to max-width: 1199		
+		- max-width: 991
+		- min-width: 768 to max-width: 991
+		- max-width: 767
+		- max-width: 639
+		- max-width: 479
+----------*/
+
+/* ## Global ******************************************* */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #000;
+	overflow-x: hidden;
+}
+
+.counter{
+	background-color: #3a7ab6;
+	height: auto;
+	margin-bottom: 5rem;
+	padding: 5rem;
+
+}
+
+#counter-text{
+	color: white;
+	font-size: 2rem;
+	letter-spacing: 2px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+#counter-para-text{
+	color: white;
+	font-size: 2rem;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	width: 100%;
+	letter-spacing: 2px;
+	margin-top: 4rem;
+}
+
+.display-97{
+	font-size: 10rem;
+	font-weight: 900;
+	color: white;
+}
+
+.per-sym{
+	font-size: 10rem;
+	font-weight: 900;
+}
+
+#our-val{
+	background-color: #004586;
+	padding: 4rem;
+}
+
+.values-text{
+	height: auto;
+	margin-left: 1rem;
+	width: 75%;
+	margin-left: 3rem;
+}
+
+.val i{
+	top: -1rem;
+}
+
+.values-text h5{
+	color: white;
+	text-transform: capitalize;
+	
+	font-weight: 200;
+	font-size: 18px;
+}
+
+.section-header h3 {
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+}
+
+#clients {
+    padding: 60px 0;
+    
+}
+#clients .clients-wrap {
+    border-top: 1px solid #d6eaff;
+    border-left: 1px solid #d6eaff;
+    margin-bottom: 30px;
+}
+
+#clients .client-logo {
+    padding: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 1px solid #d6eaff;
+    border-bottom: 1px solid #d6eaff;
+    overflow: hidden;
+    background: #fff;
+    height: 120px;
+}
+
+#clients img {
+	filter: gray; /* IE5+ */
+	-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+	-webkit-transition: all .4s ease-in-out; 
+
+}
+
+#clients .log-m{
+	width: 60%;
+}
+
+#clients .log-la{
+	width: 80%;
+}
+
+#clients img:hover {
+    	filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.1);
+	  cursor: pointer;
+    }
+
+	@media screen and (max-width:426px) {
+		#clients img {
+			width: 70%;
+		}
+
+		#clients .log-m{
+			width: 30%;
+		}
+
+		#clients .log-la{
+			width: 50%;
+		}
+	}
+.main {
+  display: flex;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  
+}
+.column #size{
+	
+  margin-top: 8px;
+  vertical-align: middle;
+  width:100%;
+  cursor:pointer;
+}
+.column img {
+  opacity: 0.9;
+  border: 1px solid #556877;
+  height: auto;
+ }
+
+.column img:hover {
+  transform: scale(1.1);
+  transition: transform .2s;
+  opacity: 1;
+ }
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+	transition: transform .2s;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+	transition: transform .2s;
+  }
+}
+.credits{
+  margin-top:50px; 
+  padding:20px;
+  background:white;
+  border-radius:5px;
+  width:450px;
+  text-align:center;
+  color:gray;
+}
+a {
+  color:#000000;
+  text-decoration:none;
+  font-family: 'Quicksand', sans-serif;
+}
+a:hover{
+  color:#006;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px 100px 100px;
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+}
+.img-hover-zoom{
+    height: auto;
+    overflow: hidden;
+    border: 5px solid #ffff;
+}
+.img-hover-zoom img{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition:  transform .5s ease;
+}
+.img-hover-zoom:hover img{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 800px) {
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+img {
+    max-width: 100%;
+	height: auto;
+}
+a {
+    outline: 0 !important;
+}
+
+/* - Padding/Margin */
+.no-padding {
+	padding: 0;
+}
+.no-left-padding{
+	padding-left: 0;
+}
+.no-right-padding {
+	padding-right: 0;
+}
+.no-top-padding {
+	padding-top: 0;
+}
+.no-bottom-padding {
+	padding-bottom: 0;
+}
+.no-margin {
+	margin: 0;
+}
+.no-left-margin {
+	margin-left: 0;
+}
+.no-right-margin {
+	margin-right: 0;
+}
+.no-top-margin {
+	padding-top: 0;
+}
+.no-bottom-margin {
+	margin-bottom: 0;
+}
+
+/* - Section Padding */
+.section-padding {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+.padding-10 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.padding-20 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.padding-30 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.padding-40 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.padding-50 {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.padding-60 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.padding-70 {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.padding-80 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.padding-90 {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+.padding-100 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.vertical_middle {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+.nav_absolute {
+	position: absolute;
+}
+.align_left {
+	text-align: left;
+}
+.align_right {
+	text-align: right;
+}
+.align_center {
+	text-align: center;
+}
+
+/* - OW pull-left/pull-right */
+.ow-pull-left  {
+	float: left;
+}
+.ow-pull-right  {
+	float: right;
+}
+
+/* - Fonts Settings */
+/* - Lato Heavy */
+@font-face {
+    font-family: 'Lato-Heavy';
+    src: url('fonts/Lato-Heavy-webfont.html');
+    src: url('fonts/Lato-Heavy-webfontd41d.html?#iefix') format('embedded-opentype'),
+         url('fonts/Lato-Heavy-webfont-2.html') format('woff2'),
+         url('fonts/Lato-Heavy-webfont-3.html') format('woff'),
+         url('fonts/Lato-Heavy-webfont-4.html') format('truetype'),
+         url('fonts/Lato-Heavy-webfont-5.html#Lato-Heavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-container {
+	width: 1920px;
+	max-width: 100%;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+/* ## Site Header ******************************************* */
+
+/* - Search */
+.search-box {
+	background-color: #303030;
+	padding: 10px;
+	position: absolute;
+	right: 15px;
+	top: 100%;
+	width: 260px;
+	opacity: 0;
+	transform: scaleY(0);
+	-webkit-transform: scaleY(0);
+	-moz-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform-origin: 0 0 0;
+	transition: all 0.4s ease-in-out 0s;
+	z-index: 101;
+}
+.search-box.active {
+	opacity: 1;
+	transform: scaleY(1);
+	-webkit-transform: scaleY(1);
+	-moz-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	visibility: visible;
+}
+.search-box form {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	display: block;
+}
+.search-box form input {
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+	color: #ccc;
+	font-size: 14px;
+	font-style: italic;
+	height: auto;
+}
+.search-box form input:focus {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	outline: none;
+	border-color: #fff;
+}
+.search-box span {
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.search-box span i {
+	font-size: 15px;
+	color: #f97b25;
+	float: right;
+	margin: 5px;
+}
+
+/* - SlidePanel */
+#slidepanel { 
+	display: block; 
+}
+#closeit,
+#toggle,
+#slideit {
+	display: none;
+}
+
+
+/* - Navigation Menu */
+.ownavigation {
+	background-color: #f6f6f6;
+	border: none;
+	border-radius: 0;
+	min-height: 1px;
+	margin-bottom: 0;
+}
+
+/* - Nav Header */
+.navbar-brand {
+	height: auto;
+	padding: 0;
+}
+
+/* - Nav Items */
+.ownavigation .navbar-nav li  a {
+	color: #222;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.56px;
+	background-color: transparent;
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+.ownavigation .navbar-nav > .active > a, 
+.ownavigation .navbar-nav > .active > a:focus, 
+.ownavigation .navbar-nav > .active > a:hover,
+.ownavigation .navbar-nav li:hover > a,
+.ownavigation .navbar-nav li a:hover,
+.ownavigation .navbar-nav li a:focus {
+	background-color: transparent;
+}
+
+/* ## Responsive ************************************************************************************** */
+	
+/*----------------------------------------------------
+
+	* Responsive
+	
+------------------------------------------------------*/
+
+/* - min-width: 1200 */
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
+}
+
+/* - min-width: 992 */
+@media (min-width: 992px) {
+	.desktop-hide {
+		display: none;
+	}
+	
+	/* ## Navigation Menu */
+	.nav_trans {
+		background: transparent;
+	}
+	
+	/* - Nav Switch */
+	.ownavigation .ddl-switch {
+		display: none !important;
+	}
+	/* - Nav Items */
+	.ownavigation .navbar-nav > li {
+		margin: 0 10px;
+	}
+	.ownavigation .navbar-nav > li:first-child {
+		margin-left: 0;
+	}
+	.ownavigation .navbar-nav > li > a {
+		margin-bottom: 45px;
+		margin-top: 45px;
+		padding: 8px 10px;
+		position: relative;
+	}
+	.ownavigation .navbar-nav > .active > a, 
+	.ownavigation .navbar-nav > .active > a:focus, 
+	.ownavigation .navbar-nav > .active > a:hover,
+	.ownavigation .navbar-nav li:hover > a,
+	.ownavigation .navbar-nav li a:hover {
+		background-color: transparent;
+		color: #ffb609;
+	}
+
+	/* - Nav Dropdown */
+	.ownavigation .navbar-collapse > ul > li > .dropdown-menu {
+		top: 100%;
+		left: 0;
+	}
+	.ownavigation ul li > .dropdown-menu {
+		background-color: #186fbe;
+		border: none;
+		left: 100%;
+		border-radius: 0;
+		margin-top: 0;
+		transition: all 0.2s ease-in-out 0s;
+		box-shadow: none;
+		opacity: 0;
+		visibility: hidden;
+		top: 0;
+		display: block;
+		padding: 0;
+		min-width: 200px;
+		max-width: 200px;
+		box-shadow: 0 3px 3px #000;
+		-webkit-box-shadow: 0 3px 3px #000;
+	}
+	.ownavigation .navbar-nav li .dropdown-menu > li > a {
+		color: #fff;
+		padding: 8px 15px;
+		-webkit-transition: all 1s ease 0s;
+		-moz-transition: all 1s ease 0s;
+		-o-transition: all 1s ease 0s;
+		transition: all 1s ease 0s;
+	}
+	.ownavigation .navbar-nav li .dropdown-menu > li > a:hover {
+		color: #ffb609;
+	}
+	.ownavigation .navbar-nav li.dropdown:hover > .dropdown-menu {
+		margin-top: 0;
+		opacity: 1;
+		visibility: visible;
+	}
+	.ownavigation ul > li > .dropdown-menu {
+		left: 0; 
+	}
+	.ownavigation .navbar-collapse > ul > li:last-child > .dropdown-menu,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) > .dropdown-menu {
+		right: 0; 
+	}
+	.ownavigation ul > li > .dropdown-menu,
+	.ownavigation ul > li .dropdown-menu ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul ul ul ul ul ul	{
+		right: auto;
+	}
+	.ownavigation ul > li .dropdown-menu ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul ul ul ul ul ul {
+		left: 100%;
+	}
+	.ownavigation ul > li .dropdown-menu ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul ul ul ul ul {
+		right: 100%;
+	}
+	.ownavigation ul > li .dropdown-menu ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul ul ul ul,
+	.ownavigation ul > li .dropdown-menu ul ul ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child > .dropdown-menu,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:last-child .dropdown-menu ul ul ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) > .dropdown-menu,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul ul ul,
+	.ownavigation .navbar-collapse > ul > li:nth-last-child(2) .dropdown-menu ul ul ul ul ul ul ul ul ul {
+		left: auto;
+	}
+}
+
+/* - Min Width : 992px & Max Width 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {	
+	.ownavigation .navbar-nav > li {
+		margin-left: 9px;
+		margin-right: 9px;
+	}
+}
+
+/* - max-width: 991 */
+@media (max-width: 991px) {
+	/* - SlidePanel */
+	#slidepanel { 
+		display: none;
+		border-bottom: 1px solid #f97b25;
+	}
+	#slideit,
+	#toggle {
+		display: block;
+		position: relative;
+		z-index: 1;
+	}
+	#loginpanel {
+		position: absolute;
+		right: 110px;
+		text-align: center;
+		top: 14px;
+	}	
+	#slideit,
+	#closeit {
+		color: #ffb609;
+		font-size: 25px;
+		position: relative;
+		right: -50px;
+		top: 22px;
+	}
+	#slideit:hover,
+	#closeit:hover {
+		color: #004586;
+	}
+	
+	.mobile-hide {
+		display: none;
+	}
+
+	/* ## Navigation Menu */
+
+	/* - Nav Main */
+	.ownavigation {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	/* - Nav Header */
+	.ownavigation .navbar-header .navbar-brand {
+		padding-left: 0;
+		margin-left: 0;
+	}	
+	
+	/* - Nav Items */
+	.ownavigation .navbar-nav {
+		width: 100%;
+		margin: 0;
+	}
+	.ownavigation .navbar-nav > li {
+		min-height: 0;
+		float: none;
+		clear: both;
+	}
+	.ownavigation .navbar-nav > li > a {
+		padding: 8px 0;
+		-webkit-transition: all 1s ease 0s;
+		-moz-transition: all 1s ease 0s;
+		-o-transition: all 1s ease 0s;
+		transition: all 1s ease 0s;
+	}	
+	.ownavigation .navbar-nav > li.active a {
+		color: #fcb100;
+	}
+	.ownavigation .navbar-nav > li.active > a:hover,
+	.ownavigation .navbar-nav  li  a:hover {
+		color: #fcb100;
+	}
+
+	/* - Nav Toggle */
+	.ownavigation .navbar-header {
+		float: none;
+	}
+	.ownavigation .navbar-toggle {
+		display: block;
+		background-color: #ffb609;
+		border-radius: 0;
+		margin: 40px 0 40px;
+		padding: 6px 5px;
+	}
+	.ownavigation .navbar-toggle .icon-bar { 
+		background-color: #fff; 
+	}	
+	.ownavigation .navbar-collapse {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.ownavigation .navbar-collapse.collapse { 
+		display: none !important; 
+	}
+	.ownavigation .collapse.in{ 
+		display:block !important; 
+	}	
+	
+	/* - Nav Switch */
+	.ownavigation .ddl-switch {
+		background-color: #ffb609;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+		padding: 2px 6px;
+		position: absolute;
+		right: 0;
+		top: 3px;
+		z-index: 100;
+	}
+	.ownavigation .ddl-active > .ddl-switch:before {
+		content: "\f106";
+	}
+
+	/* - Nav Dropdown */
+	.ownavigation .dropdown-menu {
+		background-color: transparent;
+		border: 0 none;
+		margin-top: 0;
+		padding-left: 10px;
+		padding-top: 0;
+		position: relative;
+		width: 100%;
+		box-shadow: none;
+		float: left;
+	}
+	.ownavigation .dropdown-menu li {
+		display: inline-block;
+		width: 100%;
+	}
+	.ownavigation .navbar-nav > li:last-of-type {
+		margin-bottom: 15px;
+	}
+	.ownavigation .navbar-nav li .dropdown-menu > li > a {
+		color: #232323;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		-webkit-transition: all 1s ease 0s;
+		-moz-transition: all 1s ease 0s;
+		-o-transition: all 1s ease 0s;
+		transition: all 1s ease 0s;
+	}
+	.ownavigation .navbar-nav li .dropdown-menu > li > a:hover {
+		color: #fcb100;
+	}
+}
+
+/* - max-width: 767 */
+@media (max-width: 767px) {
+	/* - Nav Toggle */
+	.ownavigation .navbar-toggle {
+		right: 0;
+	}
+}
